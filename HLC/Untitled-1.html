@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+< <body> 
+    <div class="contneir">
+           
+     <div class="forEmail">
+        <div>
+            <i class="fas fa-times"  style="float: right; cursor: pointer; color: orange; " ></i>  
+         </div>       
+        <label style="display: inline-flex;" for="">
+            De:
+            <input type="text" name="" id="" placeholder="remetente...">
+        </label>
+        <label style="display: inline-flex;"  for="">
+            Para:
+            <input type="text" name="" id="" placeholder="destinatario...">
+        </label>
+        
+        <textarea name="" id="" cols="7" rows="6" placeholder="escreva o assunto..."></textarea>
+
+        <div class="barraSend">
+            <input type="text" style="width: 45px;" placeholder="xx-xx">
+            <button>Enviar</button>
+        </div>
+        
+    </div>
+</div>
+
+<input type="checkbox" name="" id="check" onclick="toque()">clicado
+<script>
+   
+    function toque(){
+        var dado=document.getElementById("check");
+        if(dado.checked){
+        alert("hiii");
+    }
+    }
+</script>
+</body>
+</html>

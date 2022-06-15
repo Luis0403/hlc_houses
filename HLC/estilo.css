@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: serif;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: "h" "m" "f";
+}
+
+h1{
+    color: orange;
+    font-size: 18px;
+}
+.content-ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.content-list{
+    list-style:disc;
+    margin-left: 5%;  
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;   
+    color: black;
+    text-decoration: dotted;
+    line-height: 20px;
+}
+
+.content{
+    margin: 2% 10% 5% 10%;
+    text-align: justify;
+    overflow-y: visible;
+}
+
+header{
+    grid-area: h;
+    display: inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: orange;
+}
+
+main{
+    grid-area: m;
+    background-color: #dedede;
+    background-blend-mode:darken;
+   
+}
+.text_as_btn p{
+    margin-top: 4%;
+    margin-left: 2%;
+    background-color: orange;
+    border-radius: 15px;
+    font-weight: bold;
+    font: 12px;
+    width: 30%;
+    padding: 1%;
+    text-align: justify;
+    cursor: pointer    
+}
+
+footer .botoes .text_as_btn p{
+    margin-top: 0;
+    margin-left: 0;
+    width: 170px;
+    padding: 0.5%;
+    color: black;
+}
+
+
+.text_as_btn p:hover{
+    background-color: rgba(255, 166, 0, 0.774);
+}
+
+footer{
+    height: 200px;
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+}
+
+.footertop{
+    height: 80%;
+    display: flex;     
+    background-color: rgba(0, 0, 0, 0.973);
+}
+
+.footertop p{
+    color: white;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.footertop h4{
+    color: white;
+    font-family: serif;
+    text-decoration:underline;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+.footertop a{
+    margin-top: 5%;
+    margin-left: 4%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+.footerbottom{
+    height: 20%;
+    background-color: black;
+}
+
+.footerbottom p{
+    top: 50%;
+    left: 25%;
+    transform: translate(25%,50%);
+    color: white;
+    font-weight: normal;
+}
+
+.ft-left{
+    width: 33.3%;
+    
+}
+
+.ft-center{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-center a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    margin-top: 2%;
+    border-left: 50%;
+    border-right: 50%;    
+}
+
+ 
+a .icon {
+    align-self: center;
+    padding: 3%;
+    border-radius: 20%;
+}
+a span {
+    align-self: center;
+}
+
+.ft-right{
+    width: 33.3%;
+}
+
+.ft-right .botoes{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-right:3%;
+    margin-top: 3%;
+}
+
+
+.ft-right .botoes .buttons{
+    border: 1px solid orange; 
+    background-color: rgba(0, 0, 0, 0.973);
+    margin-top: 6%;
+    width: 75%;
+    text-align: center;
+    color: white;
+}
+.ft-right .botoes .buttons:hover{
+    background-color: orange;
+}
+
+h1{
+    font-weight: bold;
+    color: orange;
+    line-height: 60px;
+    margin-top:8px;  
+    text-transform: uppercase;
+    font-size: 22px;  
+}
+
+p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: bold;
+}
+
+.firstImg{
+    background-image: url(assets/IMG-20210303-WA0009.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.747);
+    background-blend-mode: darken;
+}
+
+.imgStay{
+    width: 100%;
+    height: 500px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/casalike.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.897);
+    background-blend-mode: darken;
+    background-position: center;    
+}
+
+.conteudo{
+    text-align: center;
+    padding-top: 5%;
+}
+
+span{
+    color: white;
+    padding-left: 5%;
+}
+
+footer a{
+    color: white;
+}
+
+@media(max-width:800px){
+    .text_as_btn p{
+        width: 30%;
+        margin-left: 2%;
+    }
+}
+
+@media(max-width:500px){
+    p{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 18px;
+    }
+
+    .imgStay{
+        height: 300px;
+    }
+
+    .ft-center a{
+        margin-top: 2%;        
+    }
+    .ft-right .botoes .buttons{
+        margin-top: 8%;
+        
+      }
+      .ft-right .botoes{
+        margin-left: 4%;
+      }      
+}
+
+@media(max-width:430px){
+    .text_as_btn p{
+        width:120px;
+        margin-top: 8%;
+        font-size: 12px;
+        line-height: 20px;
+      
+    }
+    
+    .ft-left{
+        width: 100%;
+        height:  33.33333%; 
+        margin-bottom: 2.2%;  
+    }
+
+
+    .ft-center{
+        width: 100%;
+        height:  33.33333%;
+        padding-bottom: 4%;
+        border-top:  0.0625px solid gray;
+        border-bottom:  0.0625px solid gray;            
+    }
+
+    
+   .ft-right{
+        width: 100%;
+        height: 33.33333%;
+    }
+    
+    .ft-right .botoes .buttons{
+      width:280px;
+      margin-top:2%;
+      height: 30px;
+      margin-left: 0.25%;
+    }
+
+    footer{
+        height: 500px;
+    }
+
+    .footerbottom{
+        height: 10%;
+        background-color: rgba(0, 0, 0, 0.781);
+    }
+
+    .footertop{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;     
+    }
+
+
+    .footerbottom p{
+        top: 50%;
+        left: 1%;
+        transform: translate(1%,50%);
+        font-size: 14px;
+    }
+
+    
+}
+ @media screen and (max-width:350px) {
+    .imgStay{
+        height: 250px;
+    }     
+
+    .ft-right .botoes .buttons{
+        width: 170px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:200px){
+    
+    .footerbottom p{
+        font-size: 11px;
+        padding-left: 1%;
+    }
+
+    .ft-right .botoes .buttons{
+        margin-top: 10%; 
+        width: 130px;     
+    }
+
+    .ft-center a{
+        margin-bottom: 1.5%;
+    }
+
+    .footertop a{
+        margin-top: 8%;
+    }
+
+}
+
+

@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-image: url(assets/casalike.jpg);
+    background-color: rgba(0, 0, 0, 0.678);
+    background-blend-mode: darken; */
+}
+.forEmail{
+   
+   display: flex;
+   flex-direction: column;
+   padding: 4%;
+   background-color: white;
+   box-shadow: 0 0 4px 4px;
+}
+.contneir{
+    width: 22%;
+    height: 50%;
+    transform: translate(100%,25%);
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-bottom: 3%;
+    color: orange;
+    font-weight: bold;
+    background-color: white;
+}
+textarea{
+    background-color: white;
+    margin: 2%;
+    border: orange solid 2px;
+    padding: 2%;
+}
+
+
+
+input{
+    border: orange solid 2px;
+    padding: 2%;
+    color: black;
+    background-color: white;
+}
+
+
+.barraSend{
+    margin: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+button{
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 2%;
+    background-color: orange;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venda de projectos</title>
+    <link rel="stylesheet" href="projectos.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="projectos.css">
+    <style>
+        button{
+            border: none;
+            font-family: serif;
+            font-weight: bold;
+            text-transform: capitalize;
+            background-color: none;
+            
+        }
+        
+         
+        button:hover{
+            background-color: rgba(255, 166, 0, 0.575);
+        }
+
+        img{
+            left:-4px;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .card{
+            display: flex;
+            flex-direction: row;
+            margin-left: 1%; 
+            justify-content: space-between;
+            font-weight: bold; 
+            color: black;
+        }
+        
+        @media (max-width:540px) {
+            .pousaImagens{
+                height:350px ;
+            } 
+            
+            #labl,.check{
+                margin: 1%;
+                width: 90%;
+            }
+            img{
+                height: 85%;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            @media (max-width:300px) {
+                .venda{
+                font-size: 9px;
+            }
+            }
+        }
+    </style>
+    <script src="JavaScript.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>                
+                <div id="menuOpen" onclick="mostrar()">
+                    <i class="fas fa-bars" style="color:black;" ></i>
+                </div>
+                <div id="menuClose">
+                    <i class="fas fa-times"style="color: black; "   ></i>  
+                </div>
+                <ul class="lista">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="projectos.html" >projectos</a></li>
+                    <li onmouseover="contacto(1)" onmouseleave="contacto(2)" >
+                       <a href=""  >contacto</a> 
+                        <span class="menuicons">
+                            <a href=""><div class="icon" style="background-color: green"><i class="fab fa-whatsapp" style="color: white;"></i></div></a>
+                            <a href=""><div class="icon" style="background-color: white;"><i class="fas fa-envelope-square" style="color: red;"></i></div></a>
+                            <a href=""><div class="icon" style="background-color: green;"><i class="fas fa-phone" style="color: white; "></i></div></a>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="botoes">
+                <!--a href="" class="buttons">Entrar</a>
+            <a href="" class="buttons">Cadastro</a-->
+            <p>Logotipo</p>
+            </div>
+        </header>
+        <main >
+            <div class="pousaImagens">
+                <img id="img" src="assets/IMG-20210303-WA0009.jpg" alt="">
+                <div class="card">
+                    <label id="labl" style="padding-left: 1%; padding-right: 1%;  background-color: orange;" for="">Preco: 25.000Mts</label>
+                    <div class="check" style="box-sizing: border-box; margin-right: 1%; background-color: orange;"> <input type="checkbox" name="" id="cbox" onclick="visitado()"> Comprar Este</div>
+                </div>
+            </div>
+            <div style="margin: 1% 15% 2% 15%; justify-content:center; display: flex; flex-direction: row;">
+                
+                <button id="btn"  onclick="change()">proximo projecto</button>
+            </div>
+
+            <div style="margin: 1% 15% 2% 15%; justify-content:center; display: flex; flex-direction: column;">
+                <p style="text-transform: uppercase;" id="venda">metodos de pagamento</p>
+                <i style="margin-left: 3%;" >
+                    <i>m-pesa</i><br>
+                    <i>pay-pal</i><br>
+                    <i>visa</i>
+                </i>
+            </div>
+
+
+            
+        </main>
+        <footer>
+            <div class="footertop">
+                <div class="ft-left">
+                    <h4>Home</h4>
+                    <a href="">Sobre Nos</a>
+                    <a href="projectos.html">Ver Projecto</a>
+                    <a href="#">Outros...</a>
+                </div>
+                <div class="ft-center" >
+                    <h4>Contactos</h4>
+                     <a href=""><div class="icon" style="background-color: green"><i class="fab fa-whatsapp" style="color: white;"></i></div><span>Whatsapp</span></a>
+                     <a href=""><div class="icon" style="background-color: white;"><i class="fas fa-envelope-square" style="color: red;"></i></div><span>E-mail</span></a>
+                     <a href=""><div class="icon" style="background-color: green;"><i class="fas fa-phone" style="color: white; "></i></div><span>Telefone</span></a>
+                </div>    
+                <div class="ft-right">
+                    
+                    <h4>Acesso a compra</h4>
+                    <div class="botoes">
+                         <!--a href="" class="buttons">Entrar</a>
+                         <a href="" class="buttons">Cadastro</a-->
+                            <a href="vendaProjectos.html" class="text_as_btn"> <p>Comprar projecto </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerbottom"><p>copy rights</p></div>
+        </footer>
+    </div>
+</body>
+</html>
